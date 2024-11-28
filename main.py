@@ -1,4 +1,5 @@
 from module1.fibonachi import recursiveFib, iterativeFib, formulaBineFib
+from module1.mersen import mersen
 
 
 if __name__ == '__main__':
@@ -27,3 +28,6 @@ if __name__ == '__main__':
         print("Введите число!")
     except Exception as e:
         print(f"Не удалось вычислить по формуле Бине\nОшибка: {e}")
+
+    n = int(input("Введите порядковый номер числа Мерсена: "))
+    print(f'{n} число Мерсена: {mersen(n)}')
