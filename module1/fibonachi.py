@@ -9,6 +9,10 @@ def recursiveFib(n):
 
 
 def iterativeFib(n):
+    if not n.isdigit():
+        raise TypeError
+    n = int(n)
+
     a, b = 0, 1
 
     for i in range(n):
@@ -18,6 +22,10 @@ def iterativeFib(n):
 
 
 def formulaBineFib(n):
+    if not n.isdigit():
+        raise TypeError
+    n = int(n)
+
     decimal.getcontext().prec = 10000
 
     root_5 = decimal.Decimal(5).sqrt()
